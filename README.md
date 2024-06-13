@@ -1,5 +1,6 @@
 # ESP32 scpi parser
 A simple [SCPI](https://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments) parser for ESP32 ESP-IDF projects.
+(bear with me, this is my first attempt at forking someone else's repository to do something I need)
 
 ## Features
 (TODO: update to suit ESP32 input/output)
