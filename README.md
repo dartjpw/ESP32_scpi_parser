@@ -1,7 +1,9 @@
-# Vrekrer scpi parser
-A simple [SCPI](https://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments) parser for Arduino projects.
+# ESP32 scpi parser
+A simple [SCPI](https://en.wikipedia.org/wiki/Standard_Commands_for_Programmable_Instruments) parser for ESP32 ESP-IDF projects.
 
 ## Features
+(TODO: update to suit ESP32 input/output)
+
 - Small memory footprint, implemented for reduced RAM usage.
 - Minimal, clean code API.
 - Can process char* strings or input from any [Stream](https://www.arduino.cc/reference/en/language/functions/communication/stream/) interface like [Serial](https://www.arduino.cc/reference/en/language/functions/communication/serial) or [Ethernet](https://www.arduino.cc/en/Reference/Ethernet).
