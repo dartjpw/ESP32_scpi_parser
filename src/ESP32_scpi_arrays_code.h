@@ -1,5 +1,5 @@
 // This file is included in ESP32_scpi_parser.h 
-// This allows Arduino IDE users to configure options with #define directives 
+// This allows ESP-IDF users to configure options with #define directives 
 // Do not include ESP32_scpi_parser.h here
 
 // ## SCPI_String_Array member functions ##
