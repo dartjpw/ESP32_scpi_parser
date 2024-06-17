@@ -1,6 +1,6 @@
-// This file is included in Vrekrer_scpi_parser.h 
+// This file is included in ESP32_scpi_parser.h 
 // This allows Arduino IDE users to configure options with #define directives 
-// Do not include Vrekrer_scpi_parser.h here
+// Do not include ESP32_scpi_parser.h here
 
 #if SCPI_MAX_SPECIAL_COMMANDS
 
