@@ -1,12 +1,12 @@
 /*! 
-@file Vrekrer_scpi_parser.h 
+@file ESP32_scpi_parser.h 
 Header file.
 */
 
-#ifndef VREKRER_SCPI_PARSER_H_
-#define VREKRER_SCPI_PARSER_H_
+#ifndef ESP32_SCPI_PARSER_H_
+#define ESP32_SCPI_PARSER_H_
 
-#define VREKRER_SCPI_VERSION "v0.5.0"
+#define ESP32_SCPI_VERSION "v0.5.0"
 
 
 /// Max branch size of the command tree and max number of parameters.
@@ -112,7 +112,7 @@ using SCPI_special_caller_t = void(*)(SCPI_Commands, Stream&);
 using scpi_hash_t = SCPI_HASH_TYPE;
 
 /*!
-  Main class of the Vrekrer_SCPI_Parser library.
+  Main class of the ESP32_SCPI_Parser library.
 */
 class SCPI_Parser {
  public:
@@ -238,17 +238,17 @@ class SCPI_Parser {
 // Important!!! Implement the library only once in the main.ino file. If you are
 // including the same file in other *.cpp files, write this instead:
 //
-// #define VREKRER_SCPI_PARSER_NO_IMPL
-// #include "Vrekrer_scpi_parser.h"
+// #define ESP32_SCPI_PARSER_NO_IMPL
+// #include "ESP32_scpi_parser.h"
 //
 // Otherwise, the Arduino linker script will return this error:
 //
 // (.text+0x0): multiple definition of `SCPI_Parser::ProcessInput(Stream&, char const*)'
 
-#ifndef VREKRER_SCPI_PARSER_NO_IMPL
-#include "Vrekrer_scpi_arrays_code.h"
-#include "Vrekrer_scpi_parser_code.h"
-#include "Vrekrer_scpi_parser_special_code.h"
+#ifndef ESP32_SCPI_PARSER_NO_IMPL
+#include "ESP32_scpi_arrays_code.h"
+#include "ESP32_scpi_parser_code.h"
+#include "ESP32_scpi_parser_special_code.h"
 #endif
 
-#endif //VREKRER_SCPI_PARSER_H_
+#endif //ESP32_SCPI_PARSER_H_
