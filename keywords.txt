@@ -1,5 +1,5 @@
 ###############################################
-# Map For Vrekrer_spci_parser
+# Map For ESP32_scpi_parser
 ###############################################
 
 # Datatypes (KEYWORD1)
