@@ -39,8 +39,6 @@ Header file.
   #define SCPI_HASH_TYPE uint8_t
 #endif
 
-#include "Arduino.h"
-
 /*!
  Variable size string array class.
 
