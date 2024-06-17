@@ -233,17 +233,15 @@ class SCPI_Parser {
 };
 
 // Include the implementation code here
-// This allows Arduino IDE users to configure options with #define directives 
+// This allows ESP-IDF users to configure options with #define directives 
 //
-// Important!!! Implement the library only once in the main.ino file. If you are
+// Important!!! Implement the library only once in the main CPP/C file. If you are
 // including the same file in other *.cpp files, write this instead:
 //
 // #define ESP32_SCPI_PARSER_NO_IMPL
 // #include "ESP32_scpi_parser.h"
 //
-// Otherwise, the Arduino linker script will return this error:
-//
-// (.text+0x0): multiple definition of `SCPI_Parser::ProcessInput(Stream&, char const*)'
+// Otherwise, the linker script will return an error
 
 #ifndef ESP32_SCPI_PARSER_NO_IMPL
 #include "ESP32_scpi_arrays_code.h"
