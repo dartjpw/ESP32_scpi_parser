@@ -46,17 +46,5 @@ void SCPI_Parser::RegisterSpecialCommand(const char* command,
   this->RegisterSpecialCommand(msg_buffer_, caller);
 }
 
-/*!
- RegisterSpecialCommand version with Flash strings (F() macro) support.
-
- Example:  
-  ``my_instrument.RegisterSpecialCommand("GET:DATA", &getData);``
-*/
-void SCPI_Parser::RegisterSpecialCommand(const __FlashStringHelper* command, 
-                                         SCPI_special_caller_t caller) {
-  strcpy_P(msg_buffer_, (const char *) command);
-  this->RegisterSpecialCommand(msg_buffer_, caller);
-}
-
 
 #endif
