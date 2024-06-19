@@ -3,6 +3,7 @@
 Header file.
 */
 
+#include <stdio.h>
 #ifndef ESP32_SCPI_PARSER_H_
 #define ESP32_SCPI_PARSER_H_
 
@@ -54,7 +55,7 @@ Header file.
 */
 class SCPI_String_Array {
  public:
-  char* operator[](const byte index) const;  //Add indexing capability
+  char* operator[](const uint8_t index) const;  //Add indexing capability
   void Append(char* value);            //Append new string (LIFO stack Push)
   char* Pop();                         //LIFO stack Pop
   char* First() const;                       //Returns the first element of the array
@@ -120,15 +121,10 @@ class SCPI_Parser {
   void SetCommandTreeBase(char* tree_base);
   //SetCommandTreeBase version with RAM string support
   void SetCommandTreeBase(const char* tree_base);
-  //SetCommandTreeBase version with Flash strings (F() macro) support
-  void SetCommandTreeBase(const __FlashStringHelper* tree_base);
   //Registers a new valid command and associate a procedure to it
   void RegisterCommand(char* command, SCPI_caller_t caller);
   //RegisterCommand version with RAM string support.
   void RegisterCommand(const char* command, SCPI_caller_t caller);
-  //RegisterCommand version with Flash strings (F() macro) support
-  void RegisterCommand(const __FlashStringHelper* command,
-                       SCPI_caller_t caller);
   //Set the function to be used by the error handler.
   void SetErrorHandler(SCPI_caller_t caller);
   ///SCPI Error codes.
